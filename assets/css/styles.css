@@ -16,15 +16,18 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
+.panel-body {
+  color: #fff;
+}
+
 .page-header {
     border-bottom: none;
 }
 
 .left-tabs  .nav-tabs>li.active>a, .left-tabs  .nav-tabs>li.active>a:hover, .left-tabs  .nav-tabs>li.active>a:focus {
-background-color: rgba(0, 0, 0, 0.05);
-border: 1px solid #ddd;
-border-right:0px;
-border-bottom-color: #ddd;
+background-color: rgba(0, 0, 0, 0.670588);
+border: 1px transparent;
+border-right:1px transparent;
 cursor: default;
 }
 
