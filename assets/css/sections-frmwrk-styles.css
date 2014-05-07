@@ -685,51 +685,7 @@ box-shadow: 0 0 10px rgba(0,0,0,.5);
 }
 
 
-/* LEFT TABS SECTION */
 
-.left-tabs .nav-tabs>li {
-float: none;
-margin-bottom: 3px;
-}
-
-.left-tabs  .nav-tabs {
-border-bottom: none;
-padding-right:0px;
-margin-right:-33px;
-z-index:1000;
-position:relative;
-}
-.left-tabs .nav-tabs>li>a {
-margin-right: 2px;
-line-height: 1.42857143;
-border: 1px solid transparent;
-border-radius: 4px 0px 0px 4px;
-}
-
-.left-tabs .tab-content .panel-default{
-	-moz-border-radius-topleft: 0px;
--webkit-border-top-left-radius: 0px;
- border-top-left-radius: 0px;
--moz-border-radius-topright: 4px;
--webkit-border-top-right-radius: 4px;
-border-top-right-radius: 4px;
--moz-border-radius-bottomright: 4px;
--webkit-border-bottom-right-radius: 4px;
-border-bottom-right-radius: 4px;
--moz-border-radius-bottomleft: 0px;
--webkit-border-bottom-left-radius: 0px;
-border-bottom-left-radius: 0px;
-
-}
-
-.left-tabs  .nav-tabs>li.active>a, .left-tabs  .nav-tabs>li.active>a:hover, .left-tabs  .nav-tabs>li.active>a:focus {
-color: #555;
-background-color: #fff;
-border: 1px solid #ddd;
-border-right:0px;
-border-bottom-color: #ddd;
-cursor: default;
-}
 
 
 /* COMING SOON SECTION */
