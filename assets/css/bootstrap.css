@@ -3497,22 +3497,24 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li {
   float: left;
   margin-bottom: -1px;
+  margin-right: 10px
 }
 .nav-tabs > li > a {
   margin-right: 5px;
   line-height: 1.42857143;
   border: none;
-  border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
   border:none;
+  background-color: rgba(0, 0, 0, 0.670588);
+  color: #fff;
 }
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #555;
   cursor: default;
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.670588);
   border: none;
   border-bottom-color: transparent;
   margin-right: 10px;

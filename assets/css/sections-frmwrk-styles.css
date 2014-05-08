@@ -68,6 +68,7 @@ section.services {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	min-height: 705px
 }
 
 
