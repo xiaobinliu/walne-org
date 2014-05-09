@@ -84,3 +84,7 @@ border-right:0px;
 border-bottom-color: #ddd;*/
 cursor: default;
 }
+
+h3 span .date {
+    font-size:1em;
+}
