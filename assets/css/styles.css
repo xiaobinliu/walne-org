@@ -49,9 +49,11 @@ float: none;
 .left-tabs  .nav-tabs {
 border-bottom: none;
 padding-right:0px;
-margin-right:-33px;
+margin-right:-30px;
 z-index:1000;
 position:relative;
+background-color: rgba(0, 0, 0, 0.670588);
+color:#fff;
 }
 .left-tabs .nav-tabs>li>a {
 margin-right: 2px;
@@ -77,7 +79,7 @@ border-bottom-left-radius: 0px;
 }
 
 .left-tabs  .nav-tabs>li.active>a, .left-tabs  .nav-tabs>li.active>a:hover, .left-tabs  .nav-tabs>li.active>a:focus {
-color: #555;
+color: #fff;
 background-color: transparent; /*
 border: 1px solid #ddd;
 border-right:0px;
@@ -87,4 +89,40 @@ cursor: default;
 
 h3 span .date {
     font-size:1em;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  font-size: 16px;
+}
+.nav-tabs > li {
+  float: left;
+  margin-bottom: -1px;
+  margin-right: -1px;
+}
+.nav-tabs > li > a {
+  margin-right: 5px;
+  line-height: 1.42857143;
+  border: none;
+  color: #428bca;
+}
+.nav-tabs > li > a:hover {
+  border:none;
+  background-color: rgba(0, 0, 0, 0.670588);
+  color: #428bca;
+}
+.nav-tabs > li > a:active {
+  border:none;
+  background-color: rgba(0, 0, 0, 0.670588);
+  color: transparent;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #428bca;
+  cursor: default;
+  background-color: rgba(0, 0, 0, 0.670588);
+  border: none;
+  border-bottom-color: transparent;
+  margin-right: 10px;
 }
