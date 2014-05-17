@@ -1,5 +1,26 @@
 /* Styles for Austin's Website */
 
+@media (min-width: 1200px) {
+  .container {
+    width: 95%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+
+section.services {
+
+    background: url('../images/walne.jpg') no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 #biotext {
     width: 75%;
     background-color: rgba(0, 0, 0, 0.670588);
@@ -34,6 +55,8 @@ cursor: default;
 .fa-twitter {
 
 }
+
+
 
 /* LEFT TABS SECTION */
 

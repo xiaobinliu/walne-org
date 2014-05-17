@@ -14,7 +14,6 @@
     <!-- Styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/sections-frmwrk-styles.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
 
    <!-- ABOUT: http://alvarotrigo.com/blog/fullpage-jquery-plugin-for-fullscreen-scrolling-websites/ -->
@@ -27,7 +26,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-	<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css" />
+	<!--<link rel="stylesheet" type="text/css" href="assets/css/flexslider.css" />-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.bxslider.css" />
+    <link href="assets/css/styles.css" rel="stylesheet">
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -39,7 +41,7 @@
 
 
 </head>
-<body id="fullpage">
+<body>
 	<div class="wrapper">
 
 	<header class="section-dark no-padding-bottom no-padding-top" >
@@ -88,17 +90,17 @@
 		</div>
 	<!-- /DARK HEADER -->
 	<!-- FLEX SLIDER  -->
-  <div class="flexslider image-bg">
-  <ul class="slides ">
+  <div class="slider">
+  <ul class="bxslider">
 		<li>
-            <img src="assets/images/mindjet.jpg" alt="">
+            <img src="assets/images/mindjet2.jpg" alt="Mindjet.com March 2014 Redesign">
 
 		</li>
 		<li>
-		    <img src="assets/images/openstudy.jpg" alt="Openstudy">
+		    <img src="assets/images/openstudy2.jpg" alt="OpenStudy subtopic taxonomy">
 		</li>
 		<li>
-			<img src="assets/images/goba3.jpg">
+			<img src="assets/images/goba2.jpg" alt="Group stream inside of Goba">
 		</li>
 		</ul>
 	</div>
@@ -113,7 +115,7 @@
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<!--	<h3 class="page-header text-left"><strong>Austin Walne</strong></h3> -->
 					<p class="lead text-left" id="biotext">
-						I'm Austin &amp; I'm presently the Product Manager for Customer Acquisition &amp; Monetization at <a href="http://www.mindjet.com">Mindjet.</a> </br> </br>I spend my days working in agile marketing and product management. I'm interested in Bitcoin, distributed systems, cryptography, and trustless networks. Learn more below.
+						I'm Austin &amp; I'm presently the Product Manager for Customer Acquisition &amp; Monetization at <a href="http://www.mindjet.com">Mindjet.</a> </br> </br>I spend my days working in agile marketing and product management. I'm interested in Bitcoin, distributed systems, and cryptography. Learn more below.
 					</p>
 				</div>
 		</div><!-- /.row -->
@@ -203,40 +205,7 @@
     <footer class="section-dark">
 <div class="container" id="Contact">
 	<div class="row">
-      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-    <!--    <h4 class=""><span>Navigation</span></h4>
-        <ul class="footer-nav-links list-unstyled">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">project</a></li>
-          <li><a href="#">Elements</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Blog</a></li>
-      </ul>-->
-    </div>
-
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-    <!--    <h4 class=""><span>Useful Links</span></h4>
-        <ul class="footer-nav-links list-unstyled">
-          <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-          <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-         <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-         <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-         <li><a href="http://www.bootstraptor.com">Bootstrap templates</a></li>
-     </ul>-->
-    </div>
-
-	<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
-    <!--    <h4 class=""><span>Useful Links</span></h4>
-        <ul class="footer-nav-links list-unstyled">
-          <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-          <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-		<li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-         <li><a href="http://www.bootstraptor.com">Bootstraptor.com</a></li>
-         <li><a href="http://www.bootstraptor.com">Bootstrap templates</a></li>
-     </ul>-->
-    </div>
-
-    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3" align="right">
+    <div align="right">
         <h4 class=""><span>Contact Info</span></h4>
 		<address>
 			<strong>Austin Walne</strong><br>
@@ -264,22 +233,13 @@
 	 <!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="assets/js/jquery.bxslider.js"></script>
 	<script>
-		// Can also be used with $(document).ready()
-		$(window).load(function() {
-		  $('.flexslider').flexslider({
-			animation: "slide"
-		  });
-		});
-	</script>
-   <script>
-   $(document).ready(function() {
-   $('#fullpage').fullpage();
+
+		$(document).ready(function(){
+  $('.bxslider').bxSlider({});
 });
-
-</script>
-
+	</script>
 
 </body>
 </html>
