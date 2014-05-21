@@ -61,17 +61,7 @@ footer{
 	width:100%;
 }
 
-section.services {
 
-	background: url('../images/walne.jpg') no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
 
 
 /* Sections custom styles */
@@ -314,7 +304,7 @@ section.half-section-1-2 .right.section-dark{
  	}
 }
 
-/* CUSTOM FLEX SLIDER STYLES */
+/* CUSTOM FLEX SLIDER STYLES
 
 .flexslider.image-bg .flex-control-nav {
 width: 100%;
@@ -333,6 +323,7 @@ max-height: 700px;
 -o-transition: all 1s ease;
 transition: all 1s ease;
 }
+*/
 /* custom carousel styles for product-mobile-slider section  */
 
 .carousel-indicators.dark-indicators li {
