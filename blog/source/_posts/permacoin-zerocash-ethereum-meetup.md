@@ -1,11 +1,11 @@
-title: 'Permacoin & Zerocash'
-date: 2014-05-18 23:16:07
-tags:
+title: 'SV Ethereum Meetup Writeup: Permacoin & Zerocash'
+date: 2014-05-25 00:01:07
+tags: bitcoin, ethereum, cryptocurrency, cryptography
 ---
 
-Last night, I attended the [Silicon Valley Ethereum Meetup](http://www.meetup.com/EthereumSiliconValley/events/175527242/) in Mountain View for a presentation on Permacoin by Andrew Miller and Zerocash by Eran Tromer. Both were thoughtful presentations that sought to push forward the field of research around novel applications for Satoshi Nakamoto's blockchain. Below is my summary of each presentation.
+Last Sunday, I attended the [Silicon Valley Ethereum Meetup](http://www.meetup.com/EthereumSiliconValley/events/175527242/) in Mountain View for a presentation on Permacoin by Andrew Miller and Zerocash by Eran Tromer. Both were thoughtful presentations that sought to push forward the field of research around novel applications for Satoshi Nakamoto's blockchain. Below is my summary of each presentation.
 
-##Permacoin
+###Permacoin
 
 Andrew & his collaborators' research is based on the premise is mining Bitcoin is only useful for securing the network; and this massive amount of computing power could be more useful for additional applications, like a massive distributed database of the world's information.
 
@@ -19,6 +19,8 @@ Permacoin would modify the Bitcoin protocol \(or perhaps create a merged mined p
 
 [Link to Permacoin Whitepaper](http://cs.umd.edu/~amiller/permacoin.pdf)
 
-##Zerocash
+###Zerocash
 
-Eran Tromer definitely wins the award for longest journey to speak at a Meetup, having just flown in from Tel Aviv to present he and his team's whitepaper on Zerocash to the IEEE [IEEE Symposium on Security and Privacy](http://www.ieee-security.org/TC/SP2014/) held this week in San Jose.
+Eran Tromer definitely won the award for longest journey to speak at a Meetup; having just flown in from Tel Aviv to present his team's whitepaper on Zerocash to the [IEEE Symposium on Security and Privacy](http://www.ieee-security.org/TC/SP2014/) held last week in San Jose. 
+
+Zerocash's goal is to fix the intrinsic lack of privacy in Bitcoin. 
