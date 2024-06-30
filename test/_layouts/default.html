@@ -39,7 +39,23 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </style>
 
 <body>
-    <div id="header">block header</div>
+        <div id="header">
+<h1>
+    <img src="https://avatars.githubusercontent.com/u/1660130?v=4" class="avatar circle" id="avatarImg" alt="avatar"><a class="blogTitle">刘小斌的强迫症治愈之路</a></h1>
+<div class="title-right">
+    <a href="https://emo.lius.us/tag.html" id="buttonSearch" class="btn btn-invisible circle" title="搜索">
+        <svg class="octicon" width="16" height="16" >
+            <path id="pathSearch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+   
+    <a class="btn btn-invisible circle" onclick="modeSwitch()" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+</div>
+</div>
     <div id="content">{{ content }}</div>
     <div id="footer">{% include footer.html %}</div>
 </body>
