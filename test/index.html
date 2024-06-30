@@ -2,6 +2,8 @@
 layout: default
 title: learn git one commit at a time
 ---
+<div style="margin-bottom: 16px;">详细介绍我是如何被强迫症击中和30多年的抗争之路以及我的办法和心得体会</div>
+
 {% assign first_post = site.posts.first %}
 <div id="post" class="grid_6 alpha content">
   <h2>
@@ -11,20 +13,27 @@ title: learn git one commit at a time
   <a id="more" href="{{ first_post.url }}">阅读全文 &raquo;</a>
 </div>
 
-<div class="grid_2 prefix_2 links">
-      <h2 id="green">置顶文章</h2>
-  <ul>    
-  {% for post in site.categories.pin %}
-        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-      {% endfor %}
-</ul>
+{% for post in site.categories.pin %}
+<nav class="SideNav border">
+  <a class="SideNav-item d-flex flex-items-center flex-justify-between" href="{{ post.url }}">
+    <div class="d-flex flex-items-center">
+        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop1" d=""></path>
+        </svg>
+        <span class="listTitle">{{ post.title }}</span>
     </div>
-
-<div class="grid_2 omega">
-  <h2>全部文章</h2>
-  <ul class="recent">
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <div class="listLabels"><span class="Label LabelTime" style="background-color:#bc4c00">{{ post.date | date_to_string }}</span></div>
+</a>
+</nav>
+ {% endfor %}
+{% for post in site.posts %}
+<nav class="SideNav border">
+  <a class="SideNav-item d-flex flex-items-center flex-justify-between" href="{{ post.url }}">
+    <div class="d-flex flex-items-center">
+        <svg class="SideNav-icon octicon" style="witdh:16px;height:16px"><path class="svgTop0" d=""></path>
+        </svg>
+        <span class="listTitle">{{ post.title }}</span>
+    </div>
+    <div class="listLabels"><span class="Label LabelTime" style="background-color:#bc4c00">{{ post.date | date_to_string }}</span></div>
+</a>
+</nav>
   {% endfor %}
-  </ul>
-</div>
