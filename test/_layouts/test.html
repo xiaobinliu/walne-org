@@ -17,7 +17,7 @@ layout: default
 }
 </style>
 <h1 class="postTitle">{{ page.title }}</h1>
-<div class="title-right">
+<!--div class="title-right">
     <a href="https://emo.lius.us" id="buttonHome" class="btn btn-invisible circle" >
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
@@ -29,7 +29,7 @@ layout: default
         </svg>
     </a>
 
-</div>
+</div-->
 
 <div class="markdown-body" id="postBody">
   <div id="date">发布日期:{{ page.date | date_to_string }}</div>
@@ -41,7 +41,7 @@ layout: default
 
 <script>
 document.getElementById("pathHome").setAttribute("d",IconList["home"]);
-document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+//document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
     cmButton=document.getElementById("cmButton");
     span=document.createElement("span");
     span.setAttribute("class","Counter");
