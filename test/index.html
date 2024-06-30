@@ -7,10 +7,9 @@ title: learn git one commit at a time
 {% assign first_post = site.posts.first %}
 <div id="post" class="grid_6 alpha content">
   <h2>
-    最新发布: {{ first_post.title }}
+    <a href="{{ first_post.url }}">最新发布: {{ first_post.title }} &raquo;</a>
   </h2>
   {{ first_post.content | truncate: 450 }}
-  <a id="more" href="{{ first_post.url }}">阅读全文 &raquo;</a>
 </div>
 
 {% for post in site.categories.pin %}
