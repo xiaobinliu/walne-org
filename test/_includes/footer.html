@@ -1,0 +1,21 @@
+Copyright © <span id="year"></span><a href="https://emo.lius.us">刘小斌的强迫症治愈之路</a>
+<p>
+
+<span id="runday"></span>
+<span id="nojobday"></span>
+<span id="ocdday"></span> <br/>Powered by Lius.us
+
+</p>
+
+<script>
+    var now=new Date();
+    var startSite=new Date("01/01/2009");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("year").innerHTML=now.getFullYear();
+    document.getElementById("nojobday").innerHTML= "全力治病"+diffDay+"天"+" • ";
+    diffDay=diffDay-15*365;
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+    diffDay=diffDay+34*365;
+    document.getElementById("ocdday").innerHTML= "强迫"+diffDay+"天";}
+</script>
