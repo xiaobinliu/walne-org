@@ -1,23 +1,61 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark_colorblind" data-light-theme="light" lang="zh-CN">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
    <title>ocd &raquo; {{ page.title }}</title>
    <meta name="author" content="Liu xiaobin" />
-   <meta name="google-site-verification" content="bB6ZqoeXMnrsPM4LWL5NzA1WSYINp8KI05qIdFJnTtc" />
-   <link href="http://feeds2.feedburner.com/git-ready" rel="alternate" title="RSS" type="application/rss+xml" />
-   <link rel="stylesheet" href="/css/reset.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/css/screen.css" type="text/css" media="screen, projection" />
-   <link rel="stylesheet" href="/css/960.css" type="text/css" media="screen, projection" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="//cdn.staticfile.net/Primer/21.0.7/primer.css" rel="stylesheet" />
+    <link rel="icon" href="https://avatars.githubusercontent.com/u/1660130?v=4">
+    
+    <script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+
 </head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
 <body>
-  <div class="container_12">
-    <div class="grid_4 prefix_2 title">
-      <h1><a href="/">ocd </a></h1>
-    </div>
-   <div class="grid_8 prefix_2 suffix_2 main">
-      {{ content }}
-    </div>
-  </div>
+    <div id="header">block header</div>
+    <div id="content">{{ content }}</div>
+    <div id="footer">{% include 'footer.html' %}</div>
 </body>
+<script>
+var IconList={{ IconList }};
+var utterancesLoad=0;
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+
+</script>
+
 </html>
