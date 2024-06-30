@@ -37,3 +37,16 @@ title: learn git one commit at a time
 </a>
 </nav>
   {% endfor %}
+
+<script>
+  iconTOP=document.getElementsByClassName("svgTop1");
+iconPost=document.getElementsByClassName("svgTop0");
+for(var i=0;i<iconTOP.length;i++){
+    iconTOP[i].setAttribute("d",IconList["upload"]);
+    iconTOP[i].parentNode.style.color="red";
+}
+for(var i=0;i<iconPost.length;i++){
+    iconPost[i].setAttribute("d",IconList["post"]);
+}
+
+</script>
