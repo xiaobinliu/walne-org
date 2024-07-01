@@ -1,7 +1,7 @@
 blogname: name
 blog_1: linktype1
 links1:
-	name: linkname1
-	url: url
-	type: linktype1
-	external: ext
+	linkname: linkname1
+	linkurl: url
+	linktype: linktype1
+	linkexternal: ext
