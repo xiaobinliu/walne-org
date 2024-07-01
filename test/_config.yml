@@ -1,8 +1,8 @@
 blogname: name
 blog_1: linktype1
 links1:
-	-	name:linkname1
-		url:url
-		type:linktype1
-		external:ext
+	name:linkname1
+	url:url
+	type:linktype1
+	external:ext
 		
