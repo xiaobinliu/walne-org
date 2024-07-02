@@ -1,7 +1,34 @@
 blogname: name
 blog_1: linktype1
+title: my title
+description: >-
+ my des
+tags:
+  aa: aa
+  bb: bb
+source: .
+#layouts_dir: ./_layouts
+#url: https://emo.lius.us
 links1:
-	linkname: linkname1
-	linkurl: url
-	linktype: linktype1
-	linkexternal: ext
+ linkname: linkname1
+ linkurl: url
+ linktype: linktype1
+ linkexternal: ext
+#plugins:
+# - jekyll-sitemap
+# - jekyll-seo-tag
+exclude:
+ - Gemfile
+#collections:
+# posts:
+#  output:true
+#defaults
+# - 
+#  scope
+#   path: ""
+#   type: "posts"
+#  values:
+#   layout: "post"
+author:
+ name: Liu Xiaobin
+ email: hi@lius.us
