@@ -3,7 +3,7 @@ layout: default
 title: 强迫之路
 ---
 <div style="margin-bottom: 16px;">详细介绍我是如何被强迫症击中和30多年的抗争之路以及我的办法和心得体会</div>
-
+<p>
 {% assign first_post = site.posts.first %}
 <div id="post" class="grid_6 alpha content">
   <h2>
@@ -11,19 +11,19 @@ title: 强迫之路
   </h2>
   {{ first_post.content | strip_html | strip_newlines | truncate: 250 }}
 </div>
+</p>
+<p>
+<h2>
+  标签云
+</h2>
 
-
-<ul>
-{{ site.tags }}
-{{ site.tags }}
-{{ site.description}}  {% for tag in site.tags.keys %}
-    <li>
-      <a href="/tags/{{ tag | slugify }}/">
-        {{ tag }}
-      </a>
-    </li>
-  {% endfor %}
-</ul>
+{% for tag in site.tags %}
+          <span class="Label LabelName" style="background-color: #88216c"><object>
+          <a style="color: #fff" href="tag.html#{{ tag[0] }}">
+        {{ tag[0] }}
+      </a></object></span>
+{% endfor %}
+</p>
 
 {% for post in site.categories.pin %}
 <nav class="SideNav border">
@@ -42,7 +42,7 @@ title: 强迫之路
       <span class="Label LabelTime" style="background-color:#bc4c00">{{ post.date | date_to_string }}</span></div>
 </a>
 </nav>
- {% endfor %}<!--
+ {% endfor %}<!--| slugify  tags.keys site.description
   bundle exec jekyll serve
 
 
